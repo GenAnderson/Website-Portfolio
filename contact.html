@@ -30,10 +30,7 @@
       <nav class="main-navigation page-header__item">
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
-            <a
-              href="index.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
+            <a href="index.html" role="menuitem" class="navigation-list__item"
               >Home</a
             >
           </li>
@@ -58,29 +55,35 @@
         </ul>
       </nav>
     </header>
-    <form action="" method="post" id="contact-form">
-      <label class="standard-label" for="contact-email">*Email: </label>
-      <input type="email" id="contact-email" required />
 
-      <label class="standard-label" for="contact-telephone">Telephone: </label>
-      <input type="tel" id="contact-telephone" />
-
-      <label class="standard-label" for="contact-message">*Message: </label>
-      <textarea required maxlength="240" id="contact-message"></textarea>
-
+    <form action="" method="post" id="contact-form" class="contact-form">
+      <div class="contact-form__item">
+        <label class="standard-label" for="contact-email">*Email: </label>
+        <input type="email" id="contact-email" required />
+      </div>
+      <div class="contact-form__item">
+        <label class="standard-label" for="contact-telephone"
+          >Telephone:
+        </label>
+        <input type="tel" id="contact-telephone" />
+      </div>
+      <div class="contact-form__item">
+        <label class="standard-label" for="contact-message">*Message: </label>
+        <textarea required maxlength="240" id="contact-message"></textarea>
+      </div>
       <button type="submit" value="Send message">Send message</button>
     </form>
-    <div>
-      CareerFoundry GmbH<br />
+    <div class="careerFoundry-info">
+      Proud student of:<br />
+      <strong>CareerFoundry GmbH</strong><br />
       Lohmühlenstraße 65<br />
       12435 Berlin<br />
       Deutschland<br />
       <br />
-      Tel <a hidden href="tel:+49 30 4849 2016">+49 30 4849 2016</a><br />
-      Skype <a href="skype:hello.careerfoundry"> hello.careerfoundry</a><br />
-      <a href="mailto:office@careerfoundry.com">office@careerfoundry.com</a>
-      <a href="mailto:office@careerfoundry.com">Contact me</a>
+
+      <a href="mailto:genanderson78@gmail.com">Contact me</a>
     </div>
+
     <footer class="page-footer">
       <p>Find me on</p>
       <div class="social-media">
