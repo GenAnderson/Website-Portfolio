@@ -163,6 +163,13 @@ section {
   box-shadow: 1px 3px 5px black;
   padding: 10px;
 }
+.grid__item {
+  color: var(--secondary-text-color);
+}
+.grid__item-link:hover {
+  color: var(--secondary-text-color-darker);
+}
+
 .grid__item-link:active,
 .grid__item-link:visited {
   color: var(--secondary-text-color);
