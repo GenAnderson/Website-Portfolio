@@ -9,10 +9,6 @@ body {
   line-height: 24px;
 }
 
-header {
-  border-bottom: 0.1px solid #013f34;
-}
-
 nav {
   font-size: 24px;
 }
@@ -76,6 +72,7 @@ button:focus,
   display: flex;
   width: 100%;
   padding: 20px;
+  border-bottom: 0.1px solid #013f34;
 }
 
 .page-header__item {
@@ -231,9 +228,21 @@ textarea {
     transform: translate(100px, 48px);
   }
 }
+@media all and (max-width: 800px) {
+  .page-header__item-logo {
+    max-width: 160px;
+  }
+}
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .page-header__item-logo {
+    max-width: 120px;
+  }
+  .profile__portrait {
+    max-width: 120px;
   }
 }
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -251,5 +260,8 @@ textarea {
   }
   h1 {
     font-size: 22px;
+  }
+  nav {
+    font-size: 20px;
   }
 }
